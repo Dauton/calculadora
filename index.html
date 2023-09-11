@@ -5,16 +5,23 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/css.css'>
     <script src='main.js'></script>
     <link href="https://fonts.cdnfonts.com/css/ds-digital" rel="stylesheet">
-    </head>
+    <script src="js/js.js"></script>
+</head>
+
 <body>
     <main class="principal">
+
+        <header class="cab">
+
+        </header>
+
         <main class="calculadora">
 
             <div class="title">
-                <img src="id-logo.png" class="logo-id">
+                <img src="img/id-logo.png" class="logo-id">
                 <div class="led"></div>
                 <h1>CALC</h1>
             </div>
@@ -89,33 +96,9 @@
         </main>
     </main>
 
-    <script src="jquery.js"></script>
-    <script>
-
-        function insert(num) {
-            var numero = document.getElementById('resultado').innerHTML;
-            document.getElementById('resultado').innerHTML = numero + num;
-        }
-
-        function clean() {
-            document.getElementById('resultado').innerHTML = "";
-        }
-
-        function back() {
-            var resultado = document.getElementById('resultado').innerHTML;
-            document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length -1);
-        }
-
-        function calcular()
-        {
-            var resultado = document.getElementById('resultado').innerHTML;
-            if(resultado) {
-                document.getElementById('resultado').innerHTML = eval(resultado);
-            } else {
-                document.getElementById('resultado').innerHTML = "";
-            }
-        }
-    </script>
+    <footer class="rod">
+        <p>ID Logistics do Brasil - Unidade CDARCEX</p>
+    </footer>
 
 </body>
 </html>
