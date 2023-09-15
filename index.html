@@ -100,5 +100,18 @@
         <p>ID Logistics do Brasil - Unidade CDARCEX</p>
     </footer>
 
+    <audio id="som-click" src="audio/click.mp3" hidden></audio>
+
+
+    <script src="jquery.js"></script>
+    <script>
+        var audioClick = document.getElementById("som-click");
+
+        $(".top-buttons div, .left-buttons div, .right-buttons div").click(function(){
+            audioClick.pause();
+            audioClick.play();
+        });
+    </script>
+
 </body>
 </html>

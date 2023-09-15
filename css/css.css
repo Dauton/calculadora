@@ -69,6 +69,7 @@ body {
     font-family: 'DS-Digital', sans-serif;
     display: flex;
     align-items: center;
+    justify-content: right;
     overflow: scroll;
     font-size: 60px;
 }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+
+    <style>
+        .menu { 
+    display: flex; 
+    flex-wrap: wrap; 
+}
+
+.menu > div { 
+    background-color:#09F; 
+    padding: 20px; 
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 30%;
+    font-weight: bold;
+    box-shadow: 0 3px 3px rgba(0,0,0,.4);
+}
+
+.menu > div:hover {
+    background-color: #0CC;
+    transform: scale(1.1); 
+    box-sizing: border-box; 
+    box-shadow: 1px 1px 1px 2px #333333;
+}
+    </style>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<div class="menu">
+  <div>Botão-1</div>
+  <div>Botão-2</div>
+  <div>Botão-3</div>
+</div><audio id="som" src="audio/click.mp3" hidden></audio>
+
+<script>
+    var som = document.getElementById("som");
+
+    $(".menu div").click(function(){
+        som.pause();
+        som.currentTime = 0;
+        som.play();
+    });
+</script>
+
+</body>
+</html>
